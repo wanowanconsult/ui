@@ -1,4 +1,4 @@
-# ui
+# @wanowanconsult/ui
 
 > Wanowan Consult UI Library
 
@@ -7,7 +7,12 @@
 ## Install
 
 ```bash
-npm install --save ui
+npm install --save @wanowanconsult/ui
+```
+or
+
+```bash
+yarn add @wanowanconsult/ui
 ```
 
 ## Usage
@@ -15,8 +20,8 @@ npm install --save ui
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'ui'
-import 'ui/dist/index.css'
+import MyComponent from '@wanowanconsult/ui'
+import '@wanowanconsult/ui/dist/index.css'
 
 class Example extends Component {
   render() {

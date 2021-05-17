@@ -26,7 +26,8 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook -o public",
+    "deploy-storybook": "storybook-to-ghpages -o public"
   },
   "peerDependencies": {
     "react": "^16.0.0"
@@ -37,6 +38,7 @@
     "@storybook/addon-essentials": "^6.2.9",
     "@storybook/addon-links": "^6.2.9",
     "@storybook/react": "^6.2.9",
+    "@storybook/storybook-deployer": "^2.8.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -46,6 +48,7 @@
     "@types/react-dom": "^16.9.7",
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
+    "auto": "^10.27.1",
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.2.2",
     "cross-env": "^7.0.2",
